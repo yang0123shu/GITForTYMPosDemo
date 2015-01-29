@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DLMainFuncViewController">
+            <connections>
+                <outlet property="cardNumLabel" destination="Zpf-wD-9L4" id="T69-zv-N4R"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXY-Mm-MBF">
+                    <rect key="frame" x="41" y="61" width="81" height="30"/>
+                    <color key="backgroundColor" red="0.60334489970000005" green="1" blue="0.45584185259999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="扫描">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="toDiscoverPeripheral:" destination="-1" eventType="touchUpInside" id="CzO-4w-65U"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQx-Zq-bki">
+                    <rect key="frame" x="41" y="112" width="81" height="30"/>
+                    <color key="backgroundColor" red="0.22217779076976663" green="0.46360448948580901" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="连接">
+                        <color key="titleColor" red="0.91651485089999996" green="0.9253274937" blue="0.90770220810000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="toConnectPeripheral:" destination="-1" eventType="touchUpInside" id="ihE-rl-mx3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBm-FF-gMv">
+                    <rect key="frame" x="41" y="162" width="100" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.98617631176633003" blue="0.41779133973408844" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="查看连接状态">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="toCheckConnectionStatus:" destination="-1" eventType="touchUpInside" id="uiw-g7-ghi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUA-Hd-i0G">
+                    <rect key="frame" x="41" y="210" width="81" height="30"/>
+                    <color key="backgroundColor" red="0.7952031573305518" green="1" blue="0.97007805776071787" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="断开连接">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="toDisconnectTYDevice:" destination="-1" eventType="touchUpInside" id="bG3-MB-j0D"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRU-La-4ha">
+                    <rect key="frame" x="41" y="256" width="100" height="30"/>
+                    <color key="backgroundColor" red="0.92043422046151158" green="0.74470986326876687" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="获取设备参数">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="toGetTYDeviceParams:" destination="-1" eventType="touchUpInside" id="zNV-1s-0om"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBf-kH-kGF">
+                    <rect key="frame" x="41" y="302" width="81" height="30"/>
+                    <color key="backgroundColor" red="0.46010926526696228" green="1" blue="0.75871165817221786" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="获取卡号">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="toGetCardNum:" destination="-1" eventType="touchUpInside" id="7zE-fW-7TA"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpf-wD-9L4">
+                    <rect key="frame" x="41" y="348" width="216" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DK1-F3-fuL">
+                    <rect key="frame" x="41" y="387" width="60" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.18403388930768949" blue="0.12640545923835123" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="取消指令">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="toCancelCurrentCommand:" destination="-1" eventType="touchUpInside" id="8Td-ih-zUo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jon-Kg-Qg0">
+                    <rect key="frame" x="41" y="433" width="45" height="30"/>
+                    <state key="normal" title="设备ID">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="toGetTYDeviceID:" destination="-1" eventType="touchUpInside" id="dKO-0y-jLK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="7" y="-88"/>
+        </view>
+    </objects>
+</document>
